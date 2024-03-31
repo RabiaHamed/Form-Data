@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* z-index: 5; */
+}
+body{
+    min-height: 100vh;
+    /* background: #6096ba; */
+    /* background: #6297a5; */
+}
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(7, 5, 6)0%, rgb(8, 8, 163)35%, rgb(7, 144, 151)100%);
+}
+h1{
+    font-family: poppins;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffff;
+    /* text-transform: uppercase; */
+    margin: 0;
+}
+table tr td{
+    vertical-align: middle;
+    /* background: #5e79a1; */
+}
+td button{
+    margin: 5px;
+}
+td button i{
+    font-size: 20px;
+}
+.trash{
+    background-color: red;
+}
+.trash:hover{
+    background-color: red;
+}
+.modal-header{
+    background: #335c67;
+    color: #ffff;
+}
+.modal-body form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+.modal-body form .imgholder{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.imgholder .upload input{
+    display: none;
+}
+.imgholder .upload{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.upload i{
+    color: #ffff;
+    font-size: 35px;
+}
+.imgholder:hover .upload{
+    display: flex;
+}
+.modal-body form .inputField{
+    flex-basis: 68%;
+    border-left: 5px groove #6297a5;
+    padding-left: 20px;
+}
+form .inputField > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+form .inputField > div label{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* #userForm form .inputField > div label::after{
+    content: "";
+    color: cornflowerblue;
+} */
+form .inputField > div input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #6297a5;
+}
+.modal-footer .submit{
+    font-size: 20px;
+}
